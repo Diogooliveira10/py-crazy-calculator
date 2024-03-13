@@ -3,7 +3,7 @@ from pytest import raises
 from .calculator_01 import Calculator1
 
 class MockRequest:
-    def __init__(self, body) -> None:
+    def __init__(self, body: Dict) -> None:
         self.json = body
 
 def test_calculate():
